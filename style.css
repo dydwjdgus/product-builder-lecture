@@ -1,1 +1,66 @@
-/* Add styles here */
+body {
+    font-family: 'Press Start 2P', cursive; /* A pixel-art font */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#color-palette {
+    display: flex;
+    margin-right: 20px;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.color-box.selected {
+    border-color: #000;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    border: 2px solid #333;
+    background-color: #fff;
+}
+
+.grid-cell {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}

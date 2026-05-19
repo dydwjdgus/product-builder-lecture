@@ -1,14 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Pixel Art Board</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <h1>Cute Pixel Art Board</h1>
+    <div id="controls">
+        <div id="color-palette">
+            <div class="color-box" style="background-color: #ff0000;"></div>
+            <div class="color-box" style="background-color: #ffff00;"></div>
+            <div class="color-box" style="background-color: #0000ff;"></div>
+            <div class="color-box" style="background-color: #000000;"></div>
+        </div>
+        <button id="eraser">Eraser</button>
+        <button id="reset">Reset</button>
+    </div>
+    <div id="grid-container"></div>
+    <button id="download">Download as PNG</button>
+
+    <script src="main.js"></script>
 </body>
 </html>
