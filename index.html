@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cute Pixel Art Board</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Cute Pixel Art Board</h1>
     <div id="controls">
+        <button id="theme-toggle">Dark Mode</button>
         <div id="color-palette">
-            <div class="color-box" style="background-color: #ff0000;"></div>
-            <div class="color-box" style="background-color: #ffff00;"></div>
-            <div class="color-box" style="background-color: #0000ff;"></div>
-            <div class="color-box" style="background-color: #000000;"></div>
+            <div class="color-box" style="background-color: #ff0000;" title="Red"></div>
+            <div class="color-box" style="background-color: #ffff00;" title="Yellow"></div>
+            <div class="color-box" style="background-color: #0000ff;" title="Blue"></div>
+            <div class="color-box" style="background-color: #000000;" title="Black"></div>
         </div>
         <button id="eraser">Eraser</button>
         <button id="reset">Reset</button>
@@ -21,6 +25,7 @@
     <div id="grid-container"></div>
     <button id="download">Download as PNG</button>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
